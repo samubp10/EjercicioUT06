@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ejer3;
+package ejer3;
 
 /**
  *
  * @author Samuel
  */
-
-
 //Empleado, especialización de persona.
 //
 //Atributos: salario
@@ -20,7 +18,6 @@ package Ejer3;
 //- Método toString(), que sobrescribirá el método toString() de la clase padre,
 //añadiendo además de los atributos de persona los propios de empleado.
 //- Un método que permita aumentar el salario en una cantidad que sería pasada como parámetro.
-
 public class Empleado extends Persona {
 
     private double salario;
@@ -43,11 +40,11 @@ public class Empleado extends Persona {
 
     @Override
     public String toString() {
-        return super.toString()+"\nEmpleado{"  + "salario=" + salario + '}';
+        return super.toString() + "\nEmpleado{" + "salario=" + salario + '}';
     }
-       
-    public double aumentarSalario(double cantidad){
-        
+
+    public double aumentarSalario(double cantidad) {
+
         return this.salario += cantidad;
     }
 }

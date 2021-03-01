@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ejer3;
+package ejer3;
 
 /**
  *
  * @author Samuel
  */
-
 // Implementa una jerarquía de clases como la que se detalla a continuación:
 //A) Persona
 //Atributos: nombre, nif, edad
@@ -17,8 +16,8 @@ package Ejer3;
 //- Getters y Setters.
 //- Constructores (por defecto y parametrizado)
 //- Método toString(), que devolverá en un String los atributos de persona concatenados.
-
 public class Persona {
+
     private String nombre;
     private String nif;
     private int edad;
@@ -60,5 +59,5 @@ public class Persona {
     public String toString() {
         return "Persona{" + "nombre=" + nombre + ", nif=" + nif + ", edad=" + edad + '}';
     }
-    
+
 }
