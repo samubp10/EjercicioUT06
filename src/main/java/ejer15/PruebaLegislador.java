@@ -31,7 +31,13 @@ public class PruebaLegislador {
         Legisladores.add(Rebeca);
         
         for(Legislador l:Legisladores){
-            System.out.println(l);
+            System.out.println(l.getCamara());
+            if(l instanceof Diputado){
+                System.out.println(((Diputado) l).getNumeroAsiento());
+            }
+            if(l instanceof Senador){
+                System.out.println(((Senador) l).getComplemento());
+            }
         }
     }
 

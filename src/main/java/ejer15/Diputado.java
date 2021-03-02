@@ -20,6 +20,8 @@ public class Diputado extends Legislador{
     public int getNumeroAsiento() {
         return numeroAsiento;
     }
+    
+    
 
     public void setNumeroAsiento(int numeroAsiento) {
         this.numeroAsiento = numeroAsiento;
@@ -30,5 +32,9 @@ public class Diputado extends Legislador{
         return super.toString()+"Diputado" + "numeroAsiento=" + numeroAsiento + "\n======================================";
     }
     
+    @Override
+    public String getCamara() {
+        return "La cámara de los diputados";
+    }
     
 }

@@ -39,5 +39,6 @@ public abstract class Legislador {
         return "Legislador{" + "provincia=" + provincia + ", partidoPolitico=" + partidoPolitico + '}';
     }
      
+    public abstract String getCamara();
      
 }

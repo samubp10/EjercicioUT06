@@ -30,6 +30,11 @@ public class Senador extends Legislador{
     public String toString() {
         return super.toString()+"Senador{" + "complemento=" + complemento + "\n======================================";
     }
+
+    @Override
+    public String getCamara() {
+        return "La cámara de los senadores";
+    }
     
     
 }
