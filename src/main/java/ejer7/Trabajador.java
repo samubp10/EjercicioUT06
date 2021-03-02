@@ -9,7 +9,7 @@ package ejer7;
  *
  * @author Samuel
  */
-public class Trabajador {
+public abstract class Trabajador {
 //Atributos
     private String nombre;
     private String apellido1;
@@ -21,9 +21,7 @@ public class Trabajador {
         this.NIF = NIF;
     }
 //Método que muestra cómo está cotizando
-    public void cotizar() {
-        System.out.println("Cotizando como Trabajador");
-    }
+    public abstract String cotizar();
     
 //Getters y setters
     public String getNombre() {

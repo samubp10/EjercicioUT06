@@ -27,9 +27,8 @@ public class Camarero extends Trabajador {
     }
 
     @Override
-    // Método sobrescrito
-    public void cotizar() {
-        System.out.println("Cotizando como Camarero");
+    public String cotizar() {
+        return"Cotizando como Camarero";
     }
 
     public String getRango() {
