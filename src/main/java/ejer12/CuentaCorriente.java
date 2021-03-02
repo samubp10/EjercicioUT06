@@ -14,9 +14,9 @@ public class CuentaCorriente extends Cuenta {
     private double intereses;
     private double saldoMin;
 
-    public CuentaCorriente(double intereses, double saldoMin, Persona cliente) {
+    public CuentaCorriente(double saldoMin, Persona cliente) {
         super(cliente);
-        this.intereses = intereses;
+        this.intereses = 1.5;
         this.saldoMin = saldoMin;
     }
 
@@ -38,14 +38,19 @@ public class CuentaCorriente extends Cuenta {
 
     @Override
     public String toString() {
-        return "CuentaCorriente{" + "intereses=" + intereses + ", saldoMin=" + saldoMin + '}';
+        return super.toString()+"CuentaCorriente{" + "intereses=" + intereses + ", saldoMin=" + saldoMin + '}';
     }
 
     @Override
     void retirar(double cifra) {
         double resultado;
+        if(cifra<this.saldoMin){
         resultado = this.getSaldo() - cifra;
         this.setSaldo(resultado);
+        }
+        else{
+            System.out.println("No se ha podido retirar dinero");
+        }
     }
 
     @Override

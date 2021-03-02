@@ -20,12 +20,17 @@ public abstract class Cuenta {
 
     public Cuenta(Persona cliente) {
         Random aleatorio = new Random();
-        ArrayList<String> numeroCuenta = new ArrayList<String>();
-        String numeroString = "";
+        ArrayList<String> numeroCuenta1 = new ArrayList<String>();
+         this.numeroCuenta= "";
+        String numeroString;
         for (int i = 0; i < 20; i++) {
             int enteroAleatorio = aleatorio.nextInt(9);
             numeroString = String.valueOf(enteroAleatorio);
-            numeroCuenta.add(numeroString);
+            numeroCuenta1.add(numeroString);
+
+        }
+        for (String t : numeroCuenta1) {
+            this.numeroCuenta += t;
         }
         this.saldo = 0;
         this.cliente = cliente;
@@ -56,6 +61,12 @@ public abstract class Cuenta {
     }
 
     abstract void retirar(double cifra);
-    
+
     abstract void actualizarSaldo();
+
+    @Override
+    public String toString() {
+        return "Cuenta{" + "numeroCuenta=" + numeroCuenta + ", saldo=" + saldo + ", cliente=" + cliente + '}';
+    }
+
 }

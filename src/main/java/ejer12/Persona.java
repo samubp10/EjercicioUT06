@@ -44,5 +44,10 @@ public class Persona {
     public void setNIF(String NIF) {
         this.NIF = NIF;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", NIF=" + NIF + '}';
+    }
     
 }
