@@ -10,22 +10,22 @@ package ejer7;
  * @author Samuel
  */
 public class Trabajador {
-
+//Atributos
     private String nombre;
     private String apellido1;
     private String NIF;
-
+//Constructor
     public Trabajador(String nombre, String apellido1, String NIF) {
         this.nombre = nombre;
         this.apellido1 = apellido1;
         this.NIF = NIF;
     }
-
+//Método que muestra cómo está cotizando
     public void cotizar() {
         System.out.println("Cotizando como Trabajador");
     }
     
-
+//Getters y setters
     public String getNombre() {
         return nombre;
     }
