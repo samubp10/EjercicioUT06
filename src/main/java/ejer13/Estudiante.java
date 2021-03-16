@@ -9,8 +9,8 @@ package ejer13;
  *
  * @author samuel
  */
-public class Estudiante extends Persona{
-    
+public class Estudiante extends Persona {
+
     private String ID;
 
     public Estudiante(String ID, String nombre, String apellidos, String NIF, Direccion direccion) {
@@ -31,7 +31,4 @@ public class Estudiante extends Persona{
         return "Estudiante{" + "ID=" + ID + '}';
     }
 
-    
-    
-    
 }
