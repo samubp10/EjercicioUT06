@@ -9,7 +9,7 @@ package ejer13;
  *
  * @author samuel
  */
-public class Persona {
+public abstract class Persona implements Identificable{
 
     private String nombre;
     private String apellidos;

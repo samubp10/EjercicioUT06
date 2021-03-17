@@ -31,4 +31,10 @@ public class Estudiante extends Persona {
         return "Estudiante{" + "ID=" + ID + '}';
     }
 
+    @Override
+    public void identificate() {
+        System.out.println("Hola, soy "+this.getNombre());
+    }
+    
+    
 }
